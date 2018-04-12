@@ -2,6 +2,7 @@
 Here's the resulting documentation for our process for deployment. We'll try to add a good amount of detail to make the steps clear.
 
 
+--------------------------------------------
 
 
 Updating Ubuntu:
@@ -12,11 +13,10 @@ Updating Ubuntu:
 
 3. sudo apt-get dist-upgrade
 
---------------------------------------------
-
 The above three steps were successful and we didn't run into any prompts or problems.
 
 
+--------------------------------------------
 
 
 4. sudo apt-get install apache2 apache2-utils
@@ -31,20 +31,18 @@ The above three steps were successful and we didn't run into any prompts or prob
 7. sudo systemctl enable apache2
 // Let's test if its working. Enter localhost into the web address bar. It should show as the image below.
 
-------------------------------------------------
-
 The above four steps were successful and we moved on to the next.
 
 
+--------------------------------------------
 
 
 8. sudo chown www-data /var/www/html/ -R
 
----------------------------------------------
-
 This step worked fine too
 
 
+--------------------------------------------
 
 
 9. sudo apt-get install mariadb-server mariadb-client
@@ -61,11 +59,10 @@ This step worked fine too
 
 13. sudo mysql_secure_installation
 
-----------------------------------
-
 The above five steps worked great, and we're able to move onto to the next part installing PHP.
 
 
+--------------------------------------------
 
 
 14. sudo apt-get install php7.0-fpm php7.0-mysql php7.0-common php7.0-gd php7.0-json php7.0-cli php7.0-curl libapache2-mod-php7.0 php-xml
@@ -82,4 +79,6 @@ The above five steps worked great, and we're able to move onto to the next part 
 
 19. sudo systemctl restart apache2
 
+
 --------------------------------------------
+
