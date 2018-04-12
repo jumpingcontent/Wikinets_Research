@@ -21,6 +21,8 @@ Here's the resulting documentation for our process for deployment. We'll try to 
 --------------------------------------------
 
 
+**Part 2**
+
 **Installing Apache:**
 
 4. sudo apt-get install apache2 apache2-utils
@@ -43,6 +45,8 @@ Here's the resulting documentation for our process for deployment. We'll try to 
 --------------------------------------------
 
 
+**Part 3**
+
 **Installing MariaDB:**
 
 9. sudo apt-get install mariadb-server mariadb-client
@@ -64,6 +68,8 @@ Here's the resulting documentation for our process for deployment. We'll try to 
 
 --------------------------------------------
 
+
+**Part 4**
 
 **Installing PHP:**
 
@@ -89,6 +95,8 @@ Here's the resulting documentation for our process for deployment. We'll try to 
 --------------------------------------------
 
 
+**Part 5**
+
 **Downloading and extracting Mediawiki:**
 
 20. cd /tmp/
@@ -106,6 +114,8 @@ Here's the resulting documentation for our process for deployment. We'll try to 
 
 -----------------------------------------------
 
+
+**Part 6**
 
 **Making link and extra installation steps:**
 
@@ -143,27 +153,67 @@ Moving mediawiki
 --------------------------------------------
 
 
+**Part 7**
+
 **Creating the database:**
 
+36. sudo mysql -u root -p
 
+// We used sudo permissions for above
 
-* ( )
+37. CREATE DATABASE Wikinet;
+
+// For the database above we changed its name to Wikinet
+
+38. GRANT ALL PRIVILEGES ON Wikinet.* TO 'klor0610'@'localhost' IDENTIFIED BY '(password here)';
+
+39. flush privileges;
+
+40. exit;
+
+* The database creation worked great, on to the next.
 
 
 -------------------------------------------
 
 
+**Part 8**
+
 **Final steps for installation:**
 
+41. sudo nano /etc/apache2/sites-available/mediawiki.conf
 
+<VirtualHost *:80>
+    ServerAdmin admin@your-domain.com
+    DocumentRoot /var/www//mediawiki/
+    ServerName wiki.your-domain.com
 
-* ( )
+    <Directory /var/www/html/mediawiki/>
+        Options FollowSymLinks
+        AllowOverride All
+        Order allow,deny
+        allow from all
+    </Directory>
+
+    ErrorLog /var/log/apache2/your-domain.com-error_log
+    CustomLog /var/log/apache2/your-domain.com-access_log common
+</VirtualHost>
+
+// We changed the wiki.your-domain.com
+
+42. sudo a2ensite mediawiki.conf
+
+43. sudo systemctl reload apache2
+
+* Configurating and installation was successfull and the deployment works. So far..
 
 
 -----------------------------------------
 
 
+**Part 9 Final**
+
 **Conclusion for installation documentation:**
 
-* ( )
+* The installation above was successful but we'll test and document more to make sure it works.
 
