@@ -219,6 +219,10 @@ Moving mediawiki
 
 43. sudo systemctl reload apache2
 
+44. sudo apt-get install php7.2
+
+// We installed php7.2 to fix an issue with packages
+
 * Configurating and installation was successfull and the deployment works. So far..
 
 
