@@ -223,6 +223,8 @@ Moving mediawiki
 
 // We installed php7.2 to fix an issue with packages
 
+// As of this step we're currently having trouble with PHP and deployment. To mitigate this we're researching different methods of implementation and new possible functions.
+
 * ( )
 
 
