@@ -5,7 +5,7 @@ Here's the resulting documentation for our process for deployment. We'll try to 
 --------------------------------------------
 
 
-Updating Ubuntu:
+**Updating Ubuntu:**
 
 1. sudo apt-get update
 
@@ -19,6 +19,8 @@ Updating Ubuntu:
 --------------------------------------------
 
 
+**Installing Apache:**
+
 4. sudo apt-get install apache2 apache2-utils
 // now you will want to make sure apache2 is active and running
 
@@ -31,19 +33,15 @@ Updating Ubuntu:
 7. sudo systemctl enable apache2
 // Let's test if its working. Enter localhost into the web address bar. It should show as the image below.
 
-* The above four steps were successful and we moved on to the next.
-
-
---------------------------------------------
-
-
 8. sudo chown www-data /var/www/html/ -R
 
-* This step worked fine too
+* The above five steps were successful and we moved on to the next.
 
 
 --------------------------------------------
 
+
+**Installing MariaDB:**
 
 9. sudo apt-get install mariadb-server mariadb-client
 
@@ -64,6 +62,8 @@ Updating Ubuntu:
 
 --------------------------------------------
 
+
+**Installing PHP:**
 
 14. sudo apt-get install php7.0-fpm php7.0-mysql php7.0-common php7.0-gd php7.0-json php7.0-cli php7.0-curl libapache2-mod-php7.0 php-xml
 
@@ -87,3 +87,53 @@ Updating Ubuntu:
 --------------------------------------------
 
 
+**Downloading and extracting Mediawiki:**
+
+20. cd /tmp/
+
+21. wget https://releases.wikimedia.org/mediawiki/1.30/mediawiki-1.30.0.targ.gz
+
+22. tar -xyzf /tmp/mediawiki-*.tar.gz
+
+23. sudo mkdir /var/lib/mediawiki
+
+24. sudo mv mediawiki-*/* /var/lib/mediawiki
+
+* The downloading and extracting worked well
+
+
+-----------------------------------------------
+
+
+**Making link and extra installation steps:**
+
+25. mv core mediawiki
+
+// Renaming folder
+
+26. sudo mv mediawiki /var/lib
+
+Moving mediawiki
+
+27. cd /var/lib
+
+28. ls
+
+29. cd /var/www/html
+
+30. sudo ln -s /var/lib/mediawiki mediawiki
+
+31. ls
+
+32. sudo apt install composer
+
+33. cd /var/lib/mediawiki
+
+34. sudo composer install --no-dev
+
+35. sudo chown www-data:www-data /var/www/mediawiki/ -R
+
+* The above steps for creating the folder and links worked well, for step 34 we added sudo because we needed those permissions.
+
+
+--------------------------------------------
