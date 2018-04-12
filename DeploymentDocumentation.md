@@ -181,25 +181,39 @@ Moving mediawiki
 
 **Final steps for installation:**
 
+// For the step below we configured the following file like so..
+
 41. sudo nano /etc/apache2/sites-available/mediawiki.conf
 
 // <VirtualHost *:80>
-//    ServerAdmin admin@your-domain.com
-//    DocumentRoot /var/www//mediawiki/
-//    ServerName wiki.your-domain.com
-//
-//    <Directory /var/www/html/mediawiki/>
-//        Options FollowSymLinks
-//        AllowOverride All
-//        Order allow,deny
-//        allow from all
-//    </Directory>
-//
-//    ErrorLog /var/log/apache2/your-domain.com-error_log
-//    CustomLog /var/log/apache2/your-domain.com-access_log common
-// </VirtualHost>
 
-// We changed the wiki.your-domain.com
+//    ServerAdmin admin@your-domain.com
+
+//    DocumentRoot /var/www//mediawiki/
+
+//    ServerName wiki.your-domain.com
+
+//
+
+//    <Directory /var/www/html/mediawiki/>
+
+//        Options FollowSymLinks
+
+//        AllowOverride All
+
+//        Order allow,deny
+
+//        allow from all
+
+//    </Directory>
+
+//
+
+//    ErrorLog /var/log/apache2/your-domain.com-error_log
+
+//    CustomLog /var/log/apache2/your-domain.com-access_log common
+
+// </VirtualHost>
 
 42. sudo a2ensite mediawiki.conf
 
