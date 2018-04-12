@@ -71,6 +71,8 @@ The above five steps worked great, and we're able to move onto to the next part 
 
 16. sudo apt-get install curl php5-cli git
 
+// We'll skip over the php5 command since it clash with php7
+
 17. sudo apt-get install curl php-cli php-mbstring git unzip
 
 // Enable and restart Apache
@@ -81,4 +83,5 @@ The above five steps worked great, and we're able to move onto to the next part 
 
 
 --------------------------------------------
+
 
