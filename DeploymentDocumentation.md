@@ -131,7 +131,9 @@ Moving mediawiki
 
 34. sudo composer install --no-dev
 
-35. sudo chown www-data:www-data /var/www/mediawiki/ -R
+35. sudo chown www-data:www-data /var/lib/mediawiki/ -R
+
+// For the above step we changed the /var/www to /var/lib
 
 * The above steps for creating the folder and links worked well, for step 34 we added sudo because we needed those permissions.
 
