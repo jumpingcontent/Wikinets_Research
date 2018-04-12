@@ -13,7 +13,7 @@ Updating Ubuntu:
 
 3. sudo apt-get dist-upgrade
 
-The above three steps were successful and we didn't run into any prompts or problems.
+* The above three steps were successful and we didn't run into any prompts or problems.
 
 
 --------------------------------------------
@@ -31,7 +31,7 @@ The above three steps were successful and we didn't run into any prompts or prob
 7. sudo systemctl enable apache2
 // Let's test if its working. Enter localhost into the web address bar. It should show as the image below.
 
-The above four steps were successful and we moved on to the next.
+* The above four steps were successful and we moved on to the next.
 
 
 --------------------------------------------
@@ -39,7 +39,7 @@ The above four steps were successful and we moved on to the next.
 
 8. sudo chown www-data /var/www/html/ -R
 
-This step worked fine too
+* This step worked fine too
 
 
 --------------------------------------------
