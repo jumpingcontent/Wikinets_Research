@@ -75,11 +75,13 @@ Updating Ubuntu:
 
 17. sudo apt-get install curl php-cli php-mbstring git unzip
 
-// Enable and restart Apache
-
 18. sudo a2enmod php7.0
 
 19. sudo systemctl restart apache2
+
+// Enable and restart Apache worked fine
+
+* The PHP installation worked decently
 
 
 --------------------------------------------
