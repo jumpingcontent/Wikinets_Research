@@ -137,3 +137,29 @@ Moving mediawiki
 
 
 --------------------------------------------
+
+
+**Creating the database:**
+
+
+
+* ( )
+
+
+-------------------------------------------
+
+
+**Final steps for installation:**
+
+
+
+* ( )
+
+
+-----------------------------------------
+
+
+**Conclusion for installation documentation:**
+
+* ( )
+
