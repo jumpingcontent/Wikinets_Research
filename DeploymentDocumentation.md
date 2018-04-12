@@ -5,6 +5,7 @@ Here's the resulting documentation for our process for deployment. We'll try to 
 --------------------------------------------
 
 
+**Part 1**
 **Updating Ubuntu:**
 
 1. sudo apt-get update
