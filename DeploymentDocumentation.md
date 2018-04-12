@@ -223,7 +223,7 @@ Moving mediawiki
 
 // We installed php7.2 to fix an issue with packages
 
-* Configurating and installation was successfull and the deployment works. So far..
+* ( )
 
 
 -----------------------------------------
@@ -233,5 +233,5 @@ Moving mediawiki
 
 **Conclusion for installation documentation:**
 
-* The installation above was successful but we'll test and document more to make sure it works.
+* ( )
 
