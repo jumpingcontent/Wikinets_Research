@@ -59,7 +59,7 @@ This step worked fine too
 
 13. sudo mysql_secure_installation
 
-The above five steps worked great, and we're able to move onto to the next part installing PHP.
+* The above five steps worked great, and we're able to move onto to the next part installing PHP.
 
 
 --------------------------------------------
