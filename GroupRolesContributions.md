@@ -12,13 +12,17 @@ Service: We'll run a MediaWiki site deployment on a server and give detail on al
 
 Group roles: Here are some roles below with a bit of info on how each person will go ahead with them.
 
-* Research: Kasia For research we'll look into installation and deployment.
+* Research: Kasia
+For research we'll look into installation and deployment.
 
-* Documentation: Yasir We'll make sure to have a good list of ports and protocols and what they do.
+* Documentation: Ron
+We'll make sure to have a good list of ports and protocols and what they do.
 
-* Testing: Sou We'll run the MediaWiki and test each function.
+* Testing: Yasir
+We'll run the MediaWiki and test each function.
 
-* Support: Juan Ron We'll work with each group member depending on which items above need contributions.
+* Support: Juan
+We'll work with each group member depending on which items above need contributions.
 
 * Communication: We'll keep in touch both through weekly/bi-weekly meetings and also a continuous group text chat.
 
