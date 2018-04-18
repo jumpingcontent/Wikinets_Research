@@ -28,7 +28,9 @@ We'll run the MediaWiki and test each function.
 
 We'll work with each group member depending on which items above need contributions.
 
-* Communication: We'll keep in touch both through weekly/bi-weekly meetings and also a continuous group text chat.
+--------------------------------------
+
+Communication: We'll keep in touch both through weekly/bi-weekly meetings and also a continuous group text chat.
 
 --------------------------------------
 
