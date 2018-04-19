@@ -225,8 +225,11 @@ Moving mediawiki
 
 // As of this step we're currently having trouble with PHP and deployment. To mitigate this we're researching different methods of implementation and new possible functions.
 
-* ( )
+45. We're currently installing set handlers and doing troubleshoot work to make sure the right version of PHP is installed on the server for our Mediawiki configuration.
 
+46.
+
+47.
 
 -----------------------------------------
 
