@@ -14,19 +14,19 @@ Group roles: Here are some roles below with a bit of info on how each person wil
 
 * Research: Kasia
 
-For research we'll look into installation and deployment.
+For research we'll look into installation and deployment of Mediawiki, making sure that the compatibility and installation process runs smoothly and each group member is well-informed of the process and goals.
 
 * Documentation: Ron
 
-We'll make sure to have a good list of ports and protocols and what they do.
+We'll make sure to thoroughly document as much of our group status and progress as reasonably possibly while also making further documentation to help prospective users have good reason to user our service.
 
 * Testing: Yasir
 
-We'll run the MediaWiki and test each function.
+We'll run the MediaWiki and test each function. We'll comprehensively run deployment testing on each port and service to ensure the services work well. One of the main goals is to ensure uptime and functionality and notify other members of any issues.
 
 * Support: Juan
 
-We'll work with each group member depending on which items above need contributions.
+We'll work with each group member depending on which items above need contributions while also working with the team ensuring that we're following the basic group framework.
 
 --------------------------------------
 
