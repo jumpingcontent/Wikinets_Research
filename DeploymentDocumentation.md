@@ -227,7 +227,7 @@ Moving mediawiki
 
 45. We're currently installing set handlers and doing troubleshoot work to make sure the right version of PHP is installed on the server for our Mediawiki configuration.
 
-46.
+46. 
 
 47.
 
